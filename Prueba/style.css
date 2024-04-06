@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+.texmenu {
+    color: white;
+}
+.barraMorada {
+    background: #8a26e1;
+    background: linear-gradient(90deg, #8a26e1 2%, #e32e9f 36%, #e32e9f 67%, #fe3e31 98%);
+    height: 40px;
+    padding: 8px 0px;
+    position: relative;
+  }
+  
+.barraMorada ul.textoDeLaBarra {
+     list-style: none;
+    padding-left: 0;
+}
+  
+.barraMorada ul.textoDeLaBarra :first-child {
+    border-left: none;
+}
+  
+.barraMorada ul.textoDeLaBarra li {
+    display: inline-block;
+    padding: 0px 12px 2rem;  
+    vertical-align: middle;
+    border-left: solid 1px #fff;
+}
+
+.barraMorada ul.textoDeLaBarra li p.texmenu {
+    padding: 0px;
+    font-size: 0.9rem; 
+    font-weight: 100;
+    margin: 0; 
+}
+
+.imagen-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
+}
+
+.imagen-grid:hover img {
+    transform: scale(1.1); /* Aplica un zoom al 110% del tamaño original */
+    transform-origin: center; /* Mantiene el punto de origen del zoom en el centro de la imagen */
+}
+
+
+
+.categoriasYregistro{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.lblCategorias{
+    width: 50px;
+    height:30px ;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-right: 20rem;
+}
+
+.registro li{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+
+.lblCategorias #spn1,#spn2,#spn3{
+    position:absolute;
+    content: "";
+    background:black ;
+    width: 25px;
+    height: 5px;
+    border-radius: 5px ;
+    transition:all 400ms ease;
+    
+    
+}
+
+#spn2{
+    top: 11px;
+}
+
+#spn3{
+    top: 22px;
+}
+#categorias{
+    display: none;
+}
+#categorias:checked ~ .lblCategorias #spn1{
+    transform: translateX(5px);
+}
+
+#categorias:checked ~ .lblCategorias #spn3{
+    transform: translateX(-5px);
+}
+
+.contenedor{
+    background-image: linear-gradient(45deg #670000, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+.barraDebusqueda{
+    background: #FFF;
+    border-color: transparent;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    outline: none;
+    height: 57px;
+    
+}
+.barraDebusqueda input{
+    flex: 1;
+    padding: 15px 15px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 20px;
+    padding-right: 10rem;
+    
+}
+
+.barraDebusqueda .botonBuscar .imagenBusqueda{
+    width: 25px;
+}
+.barraDebusqueda .botonBuscar{
+    padding: 10px 12px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+body{
+    background-color: #e8e8e8;
+}
+
+#slider{
+    width:100% ;
+    height:500px;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 15px ;
+    overflow: hidden;
+}
+
+#contenedor{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100% 100% 100% 100%;
+    animation-name: mover;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#imagen1{
+    background-image: url(https://static.ptocdn.net/images/eventos/banners2/wal197_lg_1_2_banner.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+#imagen2{
+    background-image: url(https://static.ptocdn.net/images/eventos/banners2/ppr007v2_lg_1_2_banner.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+#imagen3{
+    background-image: url(https://static.ptocdn.net/images/eventos/banners2/rec073_lg_1_2_banner.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+#imagen4{
+    background-image: url(https://static.ptocdn.net/images/eventos/banners2/rec078v2_lg_1_2_banner.jpg);
+    width: 100%;
+    height:450px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@keyframes mover {
+    25%{
+        margin-left: 0%;
+    }
+    28% {margin-left: -100%;
+    }
+    54%{
+        margin-left: -100%;
+    }
+    58%{
+        margin-left: -200%;
+    }
+    84%{
+        margin-left: -200%;
+    }
+    90%{
+        margin-left: -100%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.imagenesChiquitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-left: 2rem;
+}
+
+.imagen-grid {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+
+.imagen-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.imagen-grid:hover img {
+    transform: scale(1.1);
+}
+
+
+.imagen-gridChiquita img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.imagen-gridChiquita:hover img {
+    transform: scale(1.1);
+}
+
+.Chiquita{
+    margin-top: 20px;
+}
