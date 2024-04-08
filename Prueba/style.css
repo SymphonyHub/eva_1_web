@@ -256,7 +256,7 @@ body{
 
 .imagen-grid {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 1px transparent;
     margin-left: 10px;
 }
 
