@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Practicando</title>
+    <!--pequeña introduccion a css-->
+    <style>
+        table, th,  td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;" >
+        <thead><!--para agrupar elementos que se encuentren en la cabezera de la tabla-->
+            <tr>
+                <th>precio</th>
+                <th>producto</th>
+                <th>cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20</td>
+                <td>pepito</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>250</td>
+                <td>juanita3cocos</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+        </tfoot>
+        
+    </table>
+
+    <!--ul es lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+                <li style="list-style-type: lower-roman;">sub elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="post">
+        <label for="nombre"> Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" /><br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"><br>
+        <label for="comentario">Comentario</label><br>
+        <textarea name="comentario" id="comentario" placeholder="ingrese comentario" cols="20" rows="2"></textarea><br>
+        <button type="button"><img src="pokemon.jpg" width="60px" height="40px" alt="" />boton</button><!--Hay que programarlo en java para que haga algo-->
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+
+    </form>
+    <h1>mi primer heading</h1>
+    <h2>mi segundo heading</h2>
+    <h3>mi tercer heading</h3>
+    <h4>mi cuarto heading</h4>
+    <h5>mi quinto heading</h5>
+    <h6>mi sexto heading</h6>
+    <p>texto practico 1</p>
+    <p>la misma wea pero separado</p>
+    <hr><!--pone una Linea al medio que separa-->
+    <p>
+        este texto es <span style="color: blue;">mucho mas largo</span> y es para mostrar<br>
+         la etiqueta de span!
+    </p>
+    <a href="https://www.google.com">Ir a google</a><br>
+    <a target="_blank" href="https://www.google.com">Ir a google 2</a><br>
+    <img src="pokemon.jpg" width="600px" height="400px" alt="" />
+</body>
+</html>

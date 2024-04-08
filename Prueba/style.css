@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+html{
+    font-family: "Montserrat", sans-serif;
+}
+  
+
 body{
     margin: 0;
     background-color: #efefef;
@@ -17,39 +22,35 @@ body{
     padding: 8px 0px;
     position: relative;
   }
-  
-.barraMorada ul.textoDeLaBarra {
-     list-style: none;
-    padding-left: 0;
-}
-  
-.barraMorada ul.textoDeLaBarra :first-child {
-    border-left: none;
-}
-  
-.barraMorada ul.textoDeLaBarra li {
-    display: inline-block;
-    padding: 0px 12px 2rem;  
-    vertical-align: middle;
-    border-left: solid 1px #fff;
+  .barraMorada ul.textoDeLaBarra {
+    display: flex;
+    margin-right: 5rem;
+    margin-top: 1rem;
 }
 
-.barraMorada ul.textoDeLaBarra li p.texmenu {
-    padding: 0px;
-    font-size: 0.9rem; 
-    font-weight: 100;
-    margin: 0; 
+.barraMorada ul.textoDeLaBarra li {
+    margin-right: 1rem;
+    display: inline-block;
+    padding: 0rem 1.5rem;
+    vertical-align: middle;
 }
+
+.barraMorada ul.textoDeLaBarra li:not(:last-child) {
+    border-right: solid 1px white;
+}
+
+
+  
 
 .imagen-grid img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease; /* Agrega una transición suave al efecto de zoom */
+    transition: transform 0.3s ease;
 }
 
 .imagen-grid:hover img {
-    transform: scale(1.1); /* Aplica un zoom al 110% del tamaño original */
-    transform-origin: center; /* Mantiene el punto de origen del zoom en el centro de la imagen */
+    transform: scale(1.1);
+    transform-origin: center;
 }
 
 
@@ -283,3 +284,142 @@ body{
 .Chiquita{
     margin-top: 20px;
 }
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #888;
+    padding: 5rem 0;
+
+}
+
+.columna1 {
+    width: 25%;
+}
+
+.columna2 {
+    width: 25%;
+}
+
+.columna3 {
+    width: 25%;
+}
+
+.columna4 {
+    width: 25%;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 100px;
+    
+}
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter: #55acee;
+}
+
+.redesSociales ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.redesSociales li {
+    margin-right: 10px;
+}
+
+.redesSociales a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333; 
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+}
+
+
+.redesSociales a:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+.columna1 {
+    width: 25%;
+}
+
+
+
+.columna1 h3.logo {
+    margin-left: 8rem;
+}
+
+.columna1 ul li,
+.columna2 ul li,
+.columna3 ul li,
+.columna4 ul li {
+    color: #888;
+}
+
+.columna1 .logo img {
+    transform: scale(2);
+    padding-left: 3rem;
+}
+
+.columna2 {
+    width: 25%;
+    margin-top: 2rem;
+}
+
+
+.registro li {
+    position: relative;
+    display: inline-block;
+}
+
+.registro li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease;
+}
+
+
+.registro li:hover::after {
+    width: 100%;
+    transform-origin: left;
+}
+
